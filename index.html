@@ -1,55 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-</head>
-<body>
-
-<header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
-
-    <!-- Navigation menu to switch between sections -->
-    <nav>
-        <button onclick="showSection('bios')">Team Bios</button>
-        <button onclick="showSection('vision')">Team Vision</button>
-    </nav>
-</header>
-
-<!-- Team bios section (default section) -->
-<div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
-    </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
-    </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
-</div>
-
-<!-- Team vision/mission statement section (hidden by default) -->
-<div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
-</div>
-
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team X | C Section</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    </head>
+    <body>
+        <header>
+            <h1>Meet Our Team</h1>
+            <!-- Example team logo -->
+            <img src="img/TeamXLogo.png" alt="Team Logo" class="team-logo" width="200" height="200">
+            <!-- Navigation menu to switch between sections, any other things to make add here -->
+            <nav>
+            💣 <a href="index.html">Team Bios</a> 💣
+                <a href="mission.html">Mission Statement</a> 💣
+            </nav>
+        </header>
+        <main>
+            <!-- Team bios section (default section) -->
+            <div id="bios" class="container">
+                <!-- Each card represents an individual team member -->
+                <!--Ray-->
+                <div class="card" id="card1">
+                    <h2>Raymundo Munoz Cuevas</h2>
+                    <img src="img/raymundo.jpg" class="ray-image" alt="picture of raymundo" width="300" height="300">
+                    <p>Full-Stack</p>
+                    <button onclick="toggleBio('bio1')">Show Bio</button>
+                    <div id="bio1" class="bio">
+                        <p>Raymundo is a Computer Science Major with a concentration in Data Science from UNCC.</p>
+                        <p>Click below for Raymundo's GitHub account <a href="https://github.com/rmunozcuevas" target="_blank">Github</a></p>
+                        <label><strong><u>Skills</u></strong></label>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                            <li>C++</li>
+                        </ul>
+                        <label><strong><u>Inspirations</u></strong></label>
+                        <!--Insert Inspirations here-->
+                        <p>Linus Torvald - The man who created Git and Linux</p>
+                    </div>
+                </div>
+                <!--Devin-->
+                <div class="card" id="card2">
+                    <h2>Devin Williams</h2>
+                    <img src="img/DevinHeadsot.jpeg" alt="Headshot of Devin" width="300" height="300"/>
+                    <p>Product Owner</p>
+                    <button onclick="toggleBio('bio2')">Show Bio</button>
+                    <div id="bio2" class="bio">
+                        <p>Devin is the mind behind the magic and contributes to the team with motivation and smiles. UNCC Senior majoring in Web/App Development and Software Engineering</p>
+                        <p>Click below for Devin's GitHub account </p><a href="https://github.com/devinthedude515" target="_blank">Github</a></p>
+                        <label><strong><u>Skills</u></strong></label>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <label><strong><u>Inspirations</u></strong></label>
+                        <p>My inspirations come from the video games I've played all my life. Some people feel that games are just a way to pass time, but media, no matter the form, has a way of connecting and teaching you about life.</p>
+                    </div>
+                </div>
+                <!--Jayden-->
+                <div class="card" id="card3">
+                    <h2>Jayden Ryu</h2>
+                    <img src="img/jayden2.jpeg" class="jayden-image" alt="picture of jayden" width="300" height="300">
+                    <p>QA analyst</p>
+                    <button onclick="toggleBio('bio3')">Show Bio</button>
+                    <div id="bio3" class="bio">
+                        <p>Jayden is a Computer Science Student at UNCC who enjoys coding, debugging, and exploring new frameworks.</p>
+                        <p>Click below for Jayden's GitHub account</p><a href="https://github.com/jaydenrrr22" target="_blank">Github</a></p>
+                        <label><strong><u>Skills</u></strong></label>
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                        </ul>
+                        <label><strong><u>Inspirations</u></strong></label>
+                        <!--Insert Inspirations here-->
+                        <p>My inspiration comes from innovators like Grace Hooper and Alan Turing, and from the creativity that coding brings to problem-solving. I'm driven by a passion for learning new technologies and building solutions that make a real impact.</p>
+                    </div>
+                </div>
+                <!--Tristan-->
+                <div class="card" id="card4">
+                    <h2>Tristan Varner</h2>
+                    <img src="img/me2.png" class="Tristan-img" alt="Tristan drawing" width="300" height="300"/>
+                    <p>UI/UX Designer</p>
+                    <button onclick="toggleBio('bio4')">Show Bio</button>
+                    <div id="bio4" class = "bio">
+                    <p>Tristan Is a computer science student at UNCC with a concentration in AI and Robotics who enjoys problem solving </p>
+                    <!--Add the your gitHub link in the href ""-->
+                    <p>Click below for Tristan's GitHub account</p><a href="">Github</a></p>
+                    <label><strong><u>Skills</u></strong></label>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>R</li>
+                        </ul>
+                        <label><strong><u>Inspirations</u></strong></label>
+                        <!--Insert Inspirations here-->
+                        <p></p>
+                    </div>
+                </div>
+                <!--Jean-->
+                <div class="card" id="card5">
+                    <h2>Jean Andrade</h2>
+                    <!--Once Image added, insert into src-->
+                    <img src="img/jean.jpg" alt="coolest man known" width="300" height="300"/>
+                    <p>Scrum Master</p>
+                    <button onclick="toggleBio('bio5')">Show Bio</button>
+                    <div id="bio5" class="bio">
+                        <p>Edgiest man known. PROCEDDDD withe CAUTION!!!! This Alpha is matering the science of data. So when the lion touches data he makes reddit gold. </p>
+                        <p>Warning: approach at your own risk </p><a href="https://github.com/soberox" target="_blank">Github</a></p>
+                        <label><strong><u>Skills</u></strong></label>
+                        <ul>
+                            <li>HTML/CSS/Javascript</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Python, pygame, pytorch</li>
+                            <li>R</li>
+                            <li>Java</li>
+                            <li>C++/C</li>
+                        </ul>
+                        <label><strong><u>Inspirations</u></strong></label>
+                        <!--Insert Inspirations here-->
+                        <p>Looking to make that ccash money spread</p>
+                    </div>
+                </div>
+                    <!--Making sure you can pull information-->
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    </body>
 </html>
