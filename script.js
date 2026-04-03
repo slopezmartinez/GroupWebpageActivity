@@ -45,4 +45,10 @@ function toggleBio3(bioId, btn) {
     }
 }
 
-/* TODO: ADD Modal functions */
+function openMoodboard3() {
+    document.getElementById("moodboard3Modal").style.display = "block";
+}
+
+function closeMoodboard3() {
+    document.getElementById("moodboard3Modal").style.display = "none";
+}

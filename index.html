@@ -40,15 +40,29 @@
     <div class="card3">
         <div class="card3-content">
             <img src="img/SreeInuganti.jpg" alt="Sree Inuganti" class="profile-pic3">
+            
             <div class="card3-text">
                 <h2>Sree Inuganti</h2>
                 <p>Site Developer</p>
-                <button3 onclick="toggleBio3('bio3', this)">Meet Sree</button3>
-                <p id="bio3" class="bio3">Hello! My name is Sree; I'm Senior Undergrad student pursuing a B.S. in Computer Science with a concentration in Cybersecurity. My Computer Science inspiration comes from pioneers like Ada Lovelace and Grace Hopper.</p>
-                <!-- TODO: Add moodboard here -->
+                <button onclick="toggleBio3('bio3', this)">Meet Sree</button>
+                <p id="bio3" class="bio3">
+                    Hello! My name is Sree; I'm Senior Undergrad student pursuing a B.S. in Computer Science with a concentration in Cybersecurity. My Computer Science inspiration comes from pioneers like Ada Lovelace and Grace Hopper.
+                </p>
             </div>
+            <!-- Moodboard -->
+            <img src="img/SreeMoodboard.png"
+                alt="Sree's Moodboard"
+                class="moodboard3-preview"
+                onclick="openMoodboard3()">
         </div>
     </div>
+    
+    <div id="moodboard3Modal" class="modal3">
+        <span class="close3" onclick="closeMoodboard3()">&times;</span>
+        <img class="modal3-content" id="moodboard3Full" src="img/SreeMoodboard.png">           
+    </div>
+    
+
 
     <div class="card">
         <h2>Noah Harden</h2>
