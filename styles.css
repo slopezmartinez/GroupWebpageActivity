@@ -88,3 +88,26 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+#Noah {
+    background-image: url("https://i.etsystatic.com/18279207/r/il/a86640/5022640521/il_fullxfull.5022640521_rzps.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Noah img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Noah p {
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
