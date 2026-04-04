@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
+    <title>Team Moonvines</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
+    <h1>Team Moonvines</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/Moonvine.jpeg" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -23,26 +23,69 @@
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
+    <div class="card" style="background-color: #232136; color: #f6c177">
+        <h2>Marek Casenhiser</h2>
+        <p>Scrum Master</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
+        <div id="bio1" class="bio">
+                <img src="img/marek.jpg" width="100" length="100" style="margin-left:auto; margin-right:auto;">
+                <img src="img/marekboard.jpg" alt="Moodboard/ image I found on pintrest" />
+                <footer style="color: #f6c177">
+                        <p>List of my favorite tools: </p>
+                        <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+                        <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>
+                        <a href="https://devdocs.io/">Dev Docs</a>
+                </footer>
+        </div id="bio1" class="bio">
         <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
     </div>
     <div class="card">
-        <h2>Jane Smith</h2>
+        <h2>Nigel Smith</h2>
         <p>Backend Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
     </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
-</div>
 
+<!-- Sree's Card -->
+    <div class="card3">
+        <div class="card3-content">
+            <img src="img/SreeInuganti.jpg" alt="Sree Inuganti" class="profile-pic3">
+            
+            <div class="card3-text">
+                <h2>Sree Inuganti</h2>
+                <p>Site Developer</p>
+                <button onclick="toggleBio3('bio3', this)">Meet Sree</button>
+                <p id="bio3" class="bio3">
+                    Hi, I’m Sree! I’m a senior Computer Science student specializing in Cybersecurity. I love designing secure systems, solving complex problems, and learning from technology’s history. Trailblazers like Ada Lovelace and Grace Hopper inspire me to combine creativity with code every day.
+                </p>
+            </div>
+            <!-- Moodboard -->
+            <img src="img/SreeMoodboard.png"
+                alt="Sree's Moodboard"
+                class="moodboard3-preview"
+                onclick="openMoodboard3()">
+        </div>
+    </div>
+    
+    <div id="moodboard3Modal" class="modal3">
+        <span class="close3" onclick="closeMoodboard3()">&times;</span>
+        <img class="modal3-content" id="moodboard3Full" src="img/SreeMoodboard.png">           
+    </div>
+    
+
+
+    <div class="card">
+        <h2>Noah Harden</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    </div>
+    <div class="card">
+        <h2>Vidhi Gupte</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio5')">Show Bio</button>
+        <p id="bio5" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    </div>
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
