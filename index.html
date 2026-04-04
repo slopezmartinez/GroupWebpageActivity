@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
+    <title>Team Moonvines</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
@@ -11,7 +11,7 @@
 <header>
     <h1>Team Moonvines</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/Moonvine.jpeg" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -23,10 +23,20 @@
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>Marek Casenhsier</h2>
-        <p>Frontend Developer</p>
+    <div class="card" style="background-color: #232136; color: #f6c177">
+        <h2>Marek Casenhiser</h2>
+        <p>Scrum Master</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
+        <div id="bio1" class="bio">
+                <img src="img/marek.jpg" width="100" length="100" style="margin-left:auto; margin-right:auto;">
+                <img src="img/marekboard.jpg" alt="Moodboard/ image I found on pintrest" />
+                <footer style="color: #f6c177">
+                        <p>List of my favorite tools: </p>
+                        <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+                        <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>
+                        <a href="https://devdocs.io/">Dev Docs</a>
+                </footer>
+        </div id="bio1" class="bio">
         <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
     </div>
     <div class="card">
