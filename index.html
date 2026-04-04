@@ -37,20 +37,43 @@
                         <a href="https://devdocs.io/">Dev Docs</a>
                 </footer>
         </div id="bio1" class="bio">
+        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
     </div>
     <div class="card">
         <h2>Nigel Smith</h2>
         <p>Backend Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio"></p>
+        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
     </div>
-    <div class="card">
-        <h2>Sree Inuganti</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+
+<!-- Sree's Card -->
+    <div class="card3">
+        <div class="card3-content">
+            <img src="img/SreeInuganti.jpg" alt="Sree Inuganti" class="profile-pic3">
+            
+            <div class="card3-text">
+                <h2>Sree Inuganti</h2>
+                <p>Site Developer</p>
+                <button onclick="toggleBio3('bio3', this)">Meet Sree</button>
+                <p id="bio3" class="bio3">
+                    Hi, I’m Sree! I’m a senior Computer Science student specializing in Cybersecurity. I love designing secure systems, solving complex problems, and learning from technology’s history. Trailblazers like Ada Lovelace and Grace Hopper inspire me to combine creativity with code every day.
+                </p>
+            </div>
+            <!-- Moodboard -->
+            <img src="img/SreeMoodboard.png"
+                alt="Sree's Moodboard"
+                class="moodboard3-preview"
+                onclick="openMoodboard3()">
+        </div>
     </div>
-</div>
+    
+    <div id="moodboard3Modal" class="modal3">
+        <span class="close3" onclick="closeMoodboard3()">&times;</span>
+        <img class="modal3-content" id="moodboard3Full" src="img/SreeMoodboard.png">           
+    </div>
+    
+
+
     <div class="card">
         <h2>Noah Harden</h2>
         <p>Frontend Developer</p>
