@@ -88,3 +88,53 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* Style for the Mood Board image inside the card */
+.mood-board-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px auto 0;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.mood-board-image:hover {
+    opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal5 {
+    display: none;
+    /* This hides the big image by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black background with opacity */
+}
+
+/* Modal Content (The actual Image) */
+.modal-content5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 50px;
+}
+
+/* The Close Button */
+.close5 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -31,3 +31,46 @@ function showSection(sectionId) {
         visionSection.style.display = "block";
     }
 }
+
+// Function to show/hide team bio sections
+function showSection(sectionId) {
+    // Hide all containers
+    document.querySelectorAll('.container').forEach(container => {
+        container.style.display = 'none';
+    });
+    // Show the selected container
+    document.getElementById(sectionId).style.display = 'flex';
+}
+
+// Function to toggle individual bio text
+function toggleBio(bioId) {
+    const bio = document.getElementById(bioId);
+    if (bio.style.display === "block") {
+        bio.style.display = "none";
+    } else {
+        bio.style.display = "block";
+    }
+}
+
+// --- Vidhi's Mood Board Functions ---
+
+// Function to open Vidhi's Mood Board Modal
+function openMoodBoard5() {
+    const modal = document.getElementById("moodBoard5Modal");
+    modal.style.display = "block";
+}
+
+// Function to close Vidhi's Mood Board Modal
+function closeMoodBoard5() {
+    const modal = document.getElementById("moodBoard5Modal");
+    modal.style.display = "none";
+}
+
+// Close modal if user clicks anywhere outside of the image
+window.onclick = function (event) {
+    const modal = document.getElementById("moodBoard5Modal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
