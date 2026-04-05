@@ -79,3 +79,23 @@ window.onclick = function (event) {
     }
 }
 
+/* Sree Functions */
+/* toggle button feat Sree's bio */
+function toggleBio3(bioId, btn) {
+    const bio = document.getElementById(bioId);
+    bio.classList.toggle("show");
+    // Toggle between showing and hiding the bio section
+    if (bio.classList.contains("show")) {
+        btn.innerText = "Hide Bio";
+    } else {
+        btn.innerText = "Meet Sree";
+    }
+}
+
+function openMoodboard3() {
+    document.getElementById("moodboard3Modal").style.display = "block";
+}
+
+function closeMoodboard3() {
+    document.getElementById("moodboard3Modal").style.display = "none";
+}
