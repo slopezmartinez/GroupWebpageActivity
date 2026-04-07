@@ -16,7 +16,7 @@ header {
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 80px; /* Adjust the size as needed */
     margin-top: 10px;
 }
 
@@ -64,6 +64,14 @@ header nav button:hover {
     transform: scale(1.05);
 }
 
+#Vidhi {
+    border-top: 10px solid hwb(330 13% 57%);
+    /* Example: Hot Pink */
+    border-bottom: 10px solid hwb(330 13% 57%);
+    background-color: #d0cdef;
+    /* Optional: light tinted background for uniqueness */
+}
+
 h2 {
     margin: 0 0 10px;
 }
@@ -88,3 +96,249 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+
+/*Nigel's card picture styling */
+.card-image {
+    width: 75%; /* Make the image take the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+    border-style: solid; /* Add a border around the image */
+    margin-top: 10px; /* Add some space above the image */
+}
+/*styling for Nigel's card */
+#nigel-card {
+    background-image: url('img/sheeps\ image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: pan 12s ease-in-out infinite alternate;
+}
+/* animation for the background of Nigel's card */
+@keyframes pan {
+    from { background-position: left center; }
+    to   { background-position: right center; }
+}
+/* styling for Nigel's bio */
+#bio2 {
+    color:#0d0808; /* Dark gray text for better readability */
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* styling for the button to show Nigel's bio */
+#nigel-bio-btn {
+    background-color: #000000; /* Green button */
+    margin-top: 10px;
+}
+
+/* styling for Nigel's moodboard section */
+.moodboard {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+    margin-top: 12px;
+}
+/* styling for the images in Nigel's moodboard images*/
+.moodboard img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+/* Style for the Mood Board image inside the card */
+.mood-board-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px auto 0;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.mood-board-image:hover {
+    opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal5 {
+    display: none;
+    /* This hides the big image by default */
+#Noah {
+    background-image: url("https://i.etsystatic.com/18279207/r/il/a86640/5022640521/il_fullxfull.5022640521_rzps.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Noah img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Noah p {
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
+/*Sree's Card Styling*/
+.card3 {
+    background: rgb(203, 151, 225);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(8, 1, 8, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(15% - 30px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 600px;
+    width: 100%;
+}
+
+.card3:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(174, 37, 181, 0.1);
+}
+
+/* FLEX CONTENT */
+.card3-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Sree's Profile Pic */
+.profile-pic3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Text container */
+.card3-text {
+    flex: 1;
+}
+
+.card3-text h2 {
+    margin: 0 0 5px;
+}
+
+.card3-text p {
+    margin: 5px 0;
+}
+
+/* Sree's Button */
+.card3-text button {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #8614bf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.card3-text button:hover {
+    background: #660d93;
+    transform: scale(1.05);
+}
+
+/* Sree's Bio */
+.bio3 {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    color: #0b0301;
+    font-style: italic; 
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    transition: max-height 0.5s ease, margin-top 0.5s ease;
+}
+
+.bio3.show {
+    max-height: 500px;
+    margin-top: 15px;
+}
+
+/* Sree's Moodboard Styling */
+.moodboard3-preview {
+    display: block;
+    margin: 25px;
+    width: 200px;
+    border-radius: 12px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.moodboard3-preview:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(148, 12, 144, 0.3);
+}
+
+/* Modal background */
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black background with opacity */
+}
+
+/* Modal Content (The actual Image) */
+.modal-content5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 50px;
+}
+
+/* The Close Button */
+.close5 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+    background-color: rgba(148, 12, 144, 0.3);
+}
+
+/* Opened Image */
+.modal3-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close3 {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 100px;
+    cursor: pointer;
+}
+

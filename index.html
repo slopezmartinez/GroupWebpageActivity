@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
+    <title>Team Moonvines</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
+    <h1>Team Moonvines</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/Moonvine.jpeg" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -23,25 +23,111 @@
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
+    <div class="card" style="background-color: #232136; color: #f6c177">
+        <img src="img/marek.jpg" width="100" length="100" style="margin-left:auto; margin-right:auto;">
+        <h2>Marek Casenhiser</h2>
+        <p>Scrum Master</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
+        <div id="bio1" class="bio">
+                <img src="img/marekboard.jpg" width="300" length="800" style="margin-left:auto; margin-right:auto;" alt="Moodboard/ image I found on pintrest" />
+                <p style="color: #f6c177">Nice to meet you! I am a junior cybersecurity major working in his undergraduate year. I am currently working as a teaching assistant for a data structures professor at UNC charlotte. My technical hobbies include programming, CTF challenges, and leetcode problems.</p>
+                <footer style="color: #f6c177">
+                        <p>List of my favorite tools: </p>
+                        <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+                        <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>
+                        <a href="https://devdocs.io/">Dev Docs</a>
+                </footer>
+        </div id="bio1" class="bio">
         <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
+    <div id="nigel-card" class="card">
+        <h2>Nigel Greene</h2>
         <p>Backend Developer</p>
+        <button id="nigel-bio-btn" onclick="toggleBio('bio2')">Show Bio</button>
+        <img src="img/Nigel's card picture.jpeg" alt="Nigel's Picture" class="card-image">
+        <div id="bio2" class="bio">
+            <p>Hello! I am a Junior computer science student at the University of North Carolina at Charlotte in the undergraduate program. I enjoy doing cybersecurity analysis and pentesting vulnerabilities. P.S. I was born in the year of the sheep, so thats why there is sheep here :)</p>
+            <div class="moodboard">
+                <img class="mood-image" src="img/VS.jpg" alt="Moodboard Image 1">
+                <img class="mood-image" src="img/steam.jpg" alt="Moodboard Image 2">
+                <img class="mood-image" src="img/smile.jpg" alt="Moodboard Image 3">
+                <img class="mood-image" src="img/candy.jpg" alt="Moodboard Image 4">
+            </div>
+        </div>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
     </div>
+
+<!-- Sree's Card -->
     <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <div class="card3-content">
+            <img src="img/SreeInuganti.jpg" alt="Sree Inuganti" class="profile-pic3">
+            
+            <div class="card3-text">
+                <h2>Sree Inuganti</h2>
+                <p>Site Developer</p>
+                <button onclick="toggleBio3('bio3', this)">Meet Sree</button>
+                <p id="bio3" class="bio3">
+                    Hi, I’m Sree! I’m a senior Computer Science student specializing in Cybersecurity. I love designing secure systems, solving complex problems, and learning from technology’s history. Trailblazers like Ada Lovelace and Grace Hopper inspire me to combine creativity with code every day.
+                </p>
+            </div>
+            <!-- Moodboard -->
+            <img src="img/SreeMoodboard.png"
+                alt="Sree's Moodboard"
+                class="moodboard3-preview"
+                onclick="openMoodboard3()">
+        </div>
     </div>
 </div>
+    <div id="Noah" class="card">
+        <h2>Noah J Harden</h2>
+    
+    <div id="moodboard3Modal" class="modal3">
+        <span class="close3" onclick="closeMoodboard3()">&times;</span>
+        <img class="modal3-content" id="moodboard3Full" src="img/SreeMoodboard.png">           
+    </div>
+    
+
+
+    <div class="card">
+        <h2>Noah Harden</h2>
+        <p>Frontend Developer</p>
+        <img src="img/smaller_NJH_Norway.jpg" width="100px">
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">Greetings! I am a maseters student in cybersecurity at UNC Charlotte. 
+            I work as a Teaching Assistant for Introduction to Computer Science 2. 
+            I have a varied experience in all computing fields, and at the moment I have a personal focus on servers and backend.
+        </p>
+    </div>
+    <div id="Vidhi" class="card">
+        <h2>Vidhi Gupte</h2>
+        <p>Product Manager</p>
+        <img src="img/vidhi_gupte_image.png" width="100" style="display: block; margin: 0 auto 10px;">
+        <button onclick="toggleBio('bio5', this)">Show Bio</button>
+        <p id="bio5" class="bio">Hey there! I'm Vidhi, and I am a junior computer science major, concentrating in Systems &
+            Networks. I also am minoring in Psychology, and I love learning the applications of both fields and the
+            connection they have. Outside of academics, I enjoy spending quality time with my family and friends, especially
+            during weekend get-togethers!
+            <br><br>
+            <strong>Below is my GitHub profile:</strong>
+            <a href="https://github.com/vidhipgupte05" target="_blank">My GitHub</a>
+            <br><br>
+            <img src="img/VidhiGupteMoodBoard.png" 
+                alt="Mood Board - Vidhi Gupte" 
+                class="mood-board-image"
+                onclick="openMoodBoard5()" 
+                style="cursor: pointer; width: 200px; margin-top: 10px;">
+        </p>
+    </div>
+
+<div id="moodBoard5Modal" class="modal5">
+    <span class="close5" onclick="closeMoodBoard5()">&times;</span>
+    <img class="modal-content5" id="moodBoard5ModalContent" src="img/VidhiGupteMoodBoard.png">
+</div>
+    
+    
+    
+<!-- Close the Bios </div> here? -->
 
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">

@@ -31,3 +31,71 @@ function showSection(sectionId) {
         visionSection.style.display = "block";
     }
 }
+
+// Function to show/hide team bio sections
+function showSection(sectionId) {
+    // Hide all containers
+    document.querySelectorAll('.container').forEach(container => {
+        container.style.display = 'none';
+    });
+    // Show the selected container
+    document.getElementById(sectionId).style.display = 'flex';
+}
+
+// Function to toggle individual bio text
+function toggleBio(bioId, button) {
+    const bio = document.getElementById(bioId);
+
+    // Toggle the bio visibility
+    if (bio.style.display === "block") {
+        bio.style.display = "none";
+        if (button) button.textContent = "Show Bio";
+    } else {
+        bio.style.display = "block";
+        if (button) button.textContent = "Hide Bio";
+    }
+}
+
+
+// --- Vidhi's Mood Board Functions ---
+
+// Function to open Vidhi's Mood Board Modal
+function openMoodBoard5() {
+    const modal = document.getElementById("moodBoard5Modal");
+    modal.style.display = "block";
+}
+
+// Function to close Vidhi's Mood Board Modal
+function closeMoodBoard5() {
+    const modal = document.getElementById("moodBoard5Modal");
+    modal.style.display = "none";
+}
+
+// Close modal if user clicks anywhere outside of the image
+window.onclick = function (event) {
+    const modal = document.getElementById("moodBoard5Modal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+/* Sree Functions */
+/* toggle button feat Sree's bio */
+function toggleBio3(bioId, btn) {
+    const bio = document.getElementById(bioId);
+    bio.classList.toggle("show");
+    // Toggle between showing and hiding the bio section
+    if (bio.classList.contains("show")) {
+        btn.innerText = "Hide Bio";
+    } else {
+        btn.innerText = "Meet Sree";
+    }
+}
+
+function openMoodboard3() {
+    document.getElementById("moodboard3Modal").style.display = "block";
+}
+
+function closeMoodboard3() {
+    document.getElementById("moodboard3Modal").style.display = "none";
+}
