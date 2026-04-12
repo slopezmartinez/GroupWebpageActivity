@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Meet Our The userErrors</h1>
+    <!-- Example team logo -->
+    <img src="img/UserError.png" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <img src="img/harsh-avatar.png" alt="Harsh Desai"
+     width="120" height="120" style="border-radius:50%; object-fit:cover; object-position: center top;">
+        <h2>Harsh Desai</h2>
+        <p>Student</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">Hey, I'm Harsh! I'm a Health Systems Management senior at UNC Charlotte who also runs his own business on the side. I'm into AI, data, and finding ways technology can make healthcare better. I enjoy going to the gym, spending time with my friends, hanging out with my two cats, or just vibing at home with some video games and movies. Always working toward something bigger.</p>
+        <div class="moodboard">
+            <p><strong>Moodboard</strong></p>
+            <img src="img/harsh-gym.jpg" alt="Fitness" width="80" height="80" style="object-fit:cover;">
+            <img src="img/harsh-futureairobot.jpg" alt="AI" width="80" height="80" style="object-fit:cover;">
+            <img src="img/harsh-python.jpg" alt="Coding" width="80" height="80" style="object-fit:cover;">
+            <img src="img/harsh-cat.png" alt="My Cats" width="80" height="80" style="object-fit:cover;">
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/premium-vector/professional-african-woman-portrait-flat-cartoon-vector_621660-6456.jpg" width="120" height="120">
+        <h2>Patience Babarinlo</h2>
+        <p>Student</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio"> Patience is a senior at UNC Charlotte majoring in Computer Science.</p>
+        <p><strong>Mood Board</strong></p>
+        <img src="Mood Board.png" width="200" height="160">
+    </div>
+    <div class="card">
+        <h2>Emily Johnson</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+    <div class="card">
+        <img src="moodboard.png" alt="Mood Board" width="600" style="border-radius: 8px; margin-top: 10px" class="mood-board">
+        <h2>Sarah Santiago</h2>
+        <p>Future Data Analyst</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">Sarah is finishing up her second year at UNC Charlotte. She is pursuing an undergrad in Computer Science and Business and currently in the process of applying to the early entry Masters program of Data Science.</p>
+    </div>
+    <div class="card">
+        <h2>Sarah Lopez Martinez</h2>
+        <p>Future SOC Analyst</p>
+        <button onclick="toggleBio('bio5')">Show Bio</button>
+        <p id="bio5" class="bio">Sarah is finishing up her last Spring semester at UNC Charlotte. She is pursuing her undergraduate degree in Computer Science with a concentration on Cybersecurity.</p>
+    </div>
+</div>
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>Our mission as future Computer Scientists is to use every skill we learn not only properly but in an ethical and safe way. We want to further enhance the tech world for the better and to serve the good of everyone.</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
